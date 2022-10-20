@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import ChatListItem from './components/ChatListItem';
+import ChatScreen from './screens/ChatScreen';
 import ChatScreens from './screens/ChatScreens';
 
 const chat = {
@@ -19,7 +20,8 @@ const chat = {
 export default function App() {
   return (
     <View style={styles.container}>
-      <ChatScreens />
+      
+      <ChatScreen />
       <StatusBar style="auto" />
     </View>
   );
